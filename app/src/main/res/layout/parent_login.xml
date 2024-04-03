@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_blue"
+    android:padding="16dp"
+    tools:context=".ParentActivity">
+
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="89dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/busguard_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parent Login"
+        android:textSize="32sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/logoImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B3FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B3FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usernameEditText" />
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3F51B5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordEditText" />
+
+
+    <TextView
+        android:id="@+id/orTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/loginButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/socialButtonsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/orTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp">
+
+
+        <ImageButton
+            android:id="@+id/googleButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/google_logo"
+            android:background="@drawable/google_button_background"
+            android:contentDescription="TODO" />
+
+
+        <ImageButton
+            android:id="@+id/facebookButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/facebook_logo"
+            android:background="@drawable/facebook_button_background"
+            android:layout_marginStart="16dp"
+            android:contentDescription="TODO" />
+
+
+        <ImageButton
+            android:id="@+id/twitterButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/twitter_logo"
+            android:background="@drawable/twitter_button_background"
+            android:layout_marginStart="16dp"
+            android:contentDescription="TODO" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/newUserTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New User?"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@id/signupButton"
+        app:layout_constraintStart_toStartOf="@id/signupButton"
+        app:layout_constraintEnd_toEndOf="@id/signupButton"
+        android:layout_marginBottom="6dp"/>
+
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF5722"
+        app:layout_constraintTop_toBottomOf="@id/socialButtonsLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="56pt"
+        android:layout_marginEnd="56pt"
+        android:onClick="onSignUpClicked"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

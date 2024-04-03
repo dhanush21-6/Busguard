@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1093289882618",
+    "project_id": "busguard-5ce10",
+    "storage_bucket": "busguard-5ce10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093289882618:android:fbf75c7cd0c60527136a43",
+        "android_client_info": {
+          "package_name": "com.example.busGuard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApg-kqRhfj2JZiDPzizPejGoL4y0hfT6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
