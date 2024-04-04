@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -29,11 +32,22 @@
             android:value="AIzaSyBVV5j76TZ24MdhEJWkTJhdYz0y5R1nHjY" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="com.example.busguard.DriverMapActivity"
             android:exported="true"
-            android:label="@string/title_activity_maps" >
+            android:label="@string/title_activity_driver_map">
 
         </activity>
+        <activity
+            android:name="com.example.busguard.DriverLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.busguard.DriverSignupActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_maps" />
         <activity
             android:name="com.example.busguard.ProfileActivity"
             android:exported="false" />
@@ -41,7 +55,7 @@
             android:name="com.example.busguard.SettingsActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.busguard.SearchActivity"
+            android:name="com.example.busguard.LiveActivity"
             android:exported="false" />
         <activity
             android:name="com.example.busguard.HomeActivity"
@@ -50,11 +64,12 @@
             android:name=".ParentActivity"
             android:exported="false" />
         <activity
-            android:name=".ParentSignupActivity"
+            android:name="com.example.busguard.ParentSignupActivity"
             android:exported="false" />
         <activity
             android:name="com.example.busguard.ActivitySelection"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.BusGuardSplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

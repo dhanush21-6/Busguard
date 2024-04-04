@@ -9,8 +9,8 @@
 
     <item
         android:id="@+id/bottom_search"
-        android:icon="@drawable/baseline_search_24"
-        android:title="Search" />
+        android:icon="@drawable/baseline_location_pin_24"
+        android:title="Live" />
 
     <item
         android:id="@+id/bottom_settings"
